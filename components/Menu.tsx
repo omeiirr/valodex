@@ -18,7 +18,7 @@ export const Menu = () => {
   };
 
   return (
-    <div className='flex items-center justify-between w-full max-w-md gap-4 p-3 bg-gray-200 rounded-md '>
+    <div className='flex items-center justify-between w-full max-w-md gap-4 p-3 rounded-md bg-gray-50 '>
       <div className='flex flex-1'>
         <SelectDropdown />
       </div>

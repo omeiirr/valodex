@@ -18,7 +18,7 @@ export const SelectDropdown = () => {
   return (
     <div className='flex justify-center'>
       <select
-        className='w-full p-2 text-base text-gray-700 transition ease-in-out bg-white bg-no-repeat border border-gray-300 border-solid rounded-md font-primary bg-clip-padding focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
+        className='my-[-20px] w-full p-2 text-base text-gray-700 transition ease-in-out bg-white bg-no-repeat border border-gray-300 border-solid rounded-md font-primary bg-clip-padding focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
         aria-label='Default select example'
         onChange={handleChange}
         title='Choose an agent'
