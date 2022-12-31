@@ -12,6 +12,31 @@ module.exports = {
         Valofont: ['ValorantFont', 'monospace'],
       },
 
+      // animation
+      keyframes: {
+        wiggle: {
+          '0%': {
+            opacity: 0,
+          },
+          '100%': {
+            opacity: 1,
+          },
+        },
+
+        fadeOut: {
+          '0%': {
+            opacity: 1,
+          },
+          '100%': {
+            opacity: 0,
+          },
+        },
+      },
+      animation: {
+        wiggle: 'wiggle 3s ease-in-out',
+        fadeOut: 'fadeOut 3s ease-in-out infinite',
+      },
+    },
   },
   plugins: [],
-}
+};
