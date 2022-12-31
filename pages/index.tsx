@@ -1,22 +1,32 @@
+// @ts-nocheck
+
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
-import { Sidebar } from '../components/Sidebar';
+import { StoreContext, StoreProvider } from '../components/Store';
+import { Menu } from '../components/Menu';
+import { Agent } from '../components/Agent';
+import { useContext } from 'react';
 
 const Home: NextPage = () => {
+  const globalStore = useContext(StoreContext);
+  console.log('globalStore', globalStore);
+
   return (
-    <div className='flex min-h-screen flex-col items-center justify-center py-2 bg-gray-300'>
-      <Head>
-        <title>Create Next App</title>
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
+    <StoreProvider>
+      <div className='flex min-h-screen flex-col items-center bg-slate-500 gap-12 p-6 '>
+        <Head>
+          <title>ValoDex</title>
+          <link rel='icon' href='/favicon.ico' />
+        </Head>
 
-      <main className='flex w-full flex-1 flex-col items-center justify-center px-20 text-center'>
-        <h1 className='text-6xl font-bold'>Valorant Palette</h1>
-      </main>
+        <main className='flex w-full justify-center flex-col text-center'>
+          <h1 className='text-6xl font-bold text-white'>ValoDex</h1>
+        </main>
 
-      <Sidebar />
-    </div>
+        <Menu />
+        <Agent />
+      </div>
+    </StoreProvider>
   );
 };
 
