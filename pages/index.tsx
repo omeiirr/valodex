@@ -13,14 +13,16 @@ const Home: NextPage = () => {
 
   return (
     <StoreProvider>
-      <div className='flex min-h-screen flex-col items-center bg-slate-500 gap-12 p-6 '>
+      <div className='flex flex-col items-center min-h-screen gap-12 p-6 bg-slate-500 font-primary '>
         <Head>
           <title>ValoDex</title>
           <link rel='icon' href='/favicon.ico' />
         </Head>
 
-        <main className='flex w-full justify-center flex-col text-center'>
-          <h1 className='text-6xl font-bold text-white'>ValoDex</h1>
+        <main className='flex flex-col justify-center w-full text-center'>
+          <h1 className='text-6xl font-bold text-white font-Valofont '>
+            ValoDex
+          </h1>
         </main>
 
         <Menu />
