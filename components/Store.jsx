@@ -5,8 +5,8 @@ const StoreDispatch = createContext(undefined); // to mutate the context state
 
 function StoreProvider({ children }) {
   const [store, setStore] = useState({
-    selectedAgent: '1e58de9c-4950-5125-93e9-a0aee9f98746', // Killjoy as default
-    colorTheme: ['ffc300ff', 'b87b00ff', '413950ff', '614414ff'], // color palette of Killjoy
+    selectedAgent: '41fb69c1-4189-7b37-f117-bcaf1e96f1bf', // Astra as default
+    colorTheme: ['#f47dc9', '#a54498', '#5210c6', '#372518'], // color palette of Astra
   });
 
   return (
