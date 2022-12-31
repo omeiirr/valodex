@@ -6,7 +6,12 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        primary: ['Poppins', 'sans-serif'],
+        Valofont: ['ValorantFont', 'monospace'],
+      },
+
   },
   plugins: [],
 }
